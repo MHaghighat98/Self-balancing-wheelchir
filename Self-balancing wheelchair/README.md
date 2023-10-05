@@ -44,13 +44,4 @@ To control TeeterBot, a separate `std_msgs/Float64` topic is advertised for each
 - **Voltage mode**: `<robot name>/left_motor_voltage` and `<robot name>/right_motor_voltage`
 - **Torque mode**: `<robot name>/left_torque_cmd` and `<robot name>/right_torque_cmd`
 - **Speed mode**: `<robot name>/left_speed_cmd` and `<robot name>/right_speed_cmd`
------------------------------------------------------------------------------------------
-changes : 
-
-(1)- a transform_publisher node is added to the "teeterbot_empty_world_pid.launch" from line '43' to '46' in order to create a fixed map coordinate. 
-also c++ code is added from line '328' to '339' in "controllerInterfacePlugin.cpp".
-
-
-(2)- "trajectory_visualize.cpp" is added in order to subscribe position data from a pre-published topic named "/gazebo/LinkStates" and republish them through a nav_msgs the messages.
-this is to let Rviz know the type of message subscription and visualize the path. 
 
