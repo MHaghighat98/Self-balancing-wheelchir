@@ -1,0 +1,6 @@
+teeterbot_gazebo/src/ControllerInterfacePlugin.cpp
+teeterbot_gazebo/src/ControllerInterfacePlugin.h
+teeterbot_gazebo/src/DcMotorSim.cpp
+teeterbot_gazebo/src/DcMotorSim.h
+teeterbot_gazebo/src/MotorController.cpp
+teeterbot_gazebo/src/MotorController.h

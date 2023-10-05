@@ -1,0 +1,12 @@
+digraph G {
+"base_link" -> "body_com"[label="Broadcaster: /teeterbot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 60.175 sec old)\nBuffer length: 0.000 sec\n"];
+"base_footprint" -> "base_link"[label="Broadcaster: /gazebo\nAverage rate: 1000.201 Hz\nMost recent transform: 60.175 ( 0.000 sec old)\nBuffer length: 4.986 sec\n"];
+"base_link" -> "teeterbot__link_0"[label="Broadcaster: /teeterbot/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 60.175 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "base_footprint"[label="Broadcaster: /gazebo\nAverage rate: 1012.540 Hz\nMost recent transform: 60.213 ( -0.038 sec old)\nBuffer length: 5.024 sec\n"];
+"base_link" -> "left_wheel"[label="Broadcaster: /teeterbot/robot_state_publisher\nAverage rate: 48.185 Hz\nMost recent transform: 60.164 ( 0.011 sec old)\nBuffer length: 4.960 sec\n"];
+"base_link" -> "right_wheel"[label="Broadcaster: /teeterbot/robot_state_publisher\nAverage rate: 48.185 Hz\nMost recent transform: 60.164 ( 0.011 sec old)\nBuffer length: 4.960 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 60.175"[ shape=plaintext ] ;
+ }->"map";
+}
